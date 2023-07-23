@@ -1,0 +1,110 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+    
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">
+            Быстрый заказ
+        </button>
+
+    </div>
+
+    <div class="modal" id="consultModal">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog">
+        <button class="modal__close _close-modal">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 30C6.72894 30 0 23.2711 0 15C0 6.72894 6.72894 0 15 0C23.2711 0 30 6.72894 30 15C30 23.2711 23.2711 30 15 30ZM15 0.644268C7.08426 0.644268 0.644268 7.08426 0.644268 15C0.644268 22.916 7.08426 29.3557 15 29.3557C22.916 29.3557 29.3557 22.9157 29.3557 15C29.3557 7.08426 22.916 0.644268 15 0.644268Z" fill="black"/>
+                <path d="M18.9619 11.5105L18.4899 11.0383L15.0003 14.5283L11.5107 11.0383L11.0386 11.5105L14.5285 15.0001L11.0386 18.4897L11.5107 18.9618L15.0003 15.4719L18.4899 18.9618L18.9619 18.4897L15.472 15.0001L18.9619 11.5105Z" fill="black"/>
+            </svg>
+        </button>
+        <div class="modal__scroll">
+            <div class="modal__grid">
+                <div class="text40 bold-text">
+                    Получить <span>индивидуальные</span> условия сотрудничества
+                </div>
+                <form action="" class="consult-form">
+                    <div class="consult-form__fields">
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Имя*">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="tel" placeholder="Телефон">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="email" placeholder="Email*">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Название компании">
+                        </fieldset>
+                        <fieldset class="fg _full">
+                            <textarea placeholder="Текст сообщения"></textarea>
+                        </fieldset>
+                    </div>
+                    <div class="consult-form__wrap">
+                        <div class="file-input">
+                            <input type="file">
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.63442 18.6614C8.47274 18.7992 8.37617 18.9981 8.36811 19.2099C8.35974 19.4216 8.44065 19.6272 8.59132 19.777C8.74169 19.9269 8.94832 20.0075 9.16086 19.9995C9.37369 19.9911 9.5732 19.8949 9.71162 19.7341L19.4134 10.0725C20.8898 8.56993 21.4564 6.40063 20.9024 4.37173C20.3485 2.34322 18.7569 0.758652 16.7198 0.207385C14.6824 -0.343684 12.5046 0.221124 10.9963 1.69174L1.29415 11.3529C0.168301 12.5008 -0.263571 14.1563 0.15961 15.7046C0.582632 17.2529 1.79733 18.4625 3.35208 18.8837C4.90671 19.3051 6.56935 18.8751 7.72199 17.7539L16.507 9.00518C17.2458 8.26932 17.5343 7.1971 17.2638 6.19201C16.9935 5.18709 16.2052 4.402 15.1959 4.13265C14.1865 3.86343 13.1098 4.15086 12.371 4.8864L3.96808 13.2546V13.2548C3.78051 13.4479 3.70937 13.7251 3.78067 13.9843C3.85198 14.2433 4.05535 14.4458 4.31548 14.5169C4.57574 14.5879 4.85414 14.517 5.04823 14.3304L13.4511 5.96258V5.96243C13.8066 5.62344 14.3146 5.49565 14.789 5.62591C15.2634 5.7562 15.6339 6.12513 15.7647 6.59749C15.8955 7.06999 15.767 7.57586 15.4268 7.92981L6.64132 16.6786C5.87711 17.4285 4.77062 17.7181 3.73501 17.4391C2.6992 17.16 1.89038 16.3546 1.6101 15.3231C1.32983 14.2916 1.62079 13.1899 2.37384 12.4289L12.076 2.7673C13.1939 1.65355 14.8235 1.21858 16.351 1.62577C17.8784 2.03315 19.0717 3.22096 19.481 4.74179C19.8906 6.26273 19.4542 7.88559 18.3364 8.99939L8.63442 18.6614Z" fill="black"/>
+                            </svg>
+                            <span>Прикрепить файл</span>
+                        </div>
+                        <div class="consult-form__confirm">
+                            Соглашение на обработку персональных данных
+                        </div>
+                    </div>
+                    <button class="consult-form__btn m-btn m-btn-primary">
+                        <span>Отправить</span>
+                        <img src="img/arrow.svg" alt="">
+                    </button>
+<!--                    <div class="consult-form__hint">-->
+<!--                        <div class="text12">Нажимая на кнопку, вы подтверждаете согласие с обработки данных</div>-->
+<!--                    </div>-->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <div class="modal-backdrop show"></div> -->
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
